@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Roboto:wght@300;400;700&family=Signika&display=swap');
+
+.Header{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-family: 'Signika',sans-serif;
+    padding-right: 10em;
+}
+
+
+
+.NavBar ul{
+    display: flex;
+    gap:2em;
+    text-decoration: none;
+    list-style: none;
+}
+
+.NavBar ul a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.NavBar ul li a:hover{
+    color: orange;
+}
+
+.NavBar ul li:hover{
+    transform: scale(1.2);
+    
+}
+
+
+/* Media query 320 a 480*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .Header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        width: 145%;
+     
+    }
+
+    .NavBar{
+        font-size:12px;
+        margin-right: 0;
+        
+    }
+
+}
+
+
+@media only screen 
+  and (min-device-width: 481px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .Header{
+        padding-right: 0;
+        margin-bottom: 2em;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 813px) 
+  and (max-device-width: 1199px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .Header{
+        padding-right: 0;
+        font-size: 18px;
+    }
+  }

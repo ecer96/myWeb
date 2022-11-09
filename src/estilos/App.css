@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Roboto:wght@300;400;700&family=Signika&display=swap');
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Signika',sans-serif;
+}
+
+.App-SobreMi{
+  margin-top:10em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap:14em;
+  margin-right: 10em;
+}
+
+.miImagen{
+  height: 50vh;
+  opacity: 70%;
+  background-color: #D9D9D7;
+  border-radius: 40%;
+  padding: 10px 10px 10px;
+}
+
+.PresentacionH2{
+  color: white;
+  font-size:30px;
+  display: flex;
+
+  
+  
+}
+
+#spanDev{
+ display: flex;
+ padding-left: .2em;     
+}
+
+.PresentacionH1{
+  color:white;
+  font-size: 50px;
+  margin-bottom: -30px;
+  margin-top:-35px ;
+  display: flex;
+}
+
+.SobreMi{
+  text-transform: capitalize;
+ padding-top: 2.5em;
+}
+
+
+.typeIt{
+  color:orange;
+}
+
+
+
+/*Media Query de 320px a 480px */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+   
+    .App{
+      justify-content: center;
+      width: 145%;
+    
+    
+     }
+    
+    
+      .miImagen{
+      height: 12vh;
+      width: 30vw;
+     padding: 0;
+    
+     }
+    
+     .SobreMi{
+      padding: 0;
+      padding-bottom: 8px;
+      
+     
+    
+     }
+    
+     .App-SobreMi{
+      gap: 1em;
+      margin-top: 0;
+      height: 700px;
+      align-items: center;
+      margin-right: 0;
+      
+    
+     
+     }
+    
+     .PresentacionH1{
+      margin-top: -16px;
+      margin-bottom: -16px;
+      font-size: 20px;
+     }
+    
+     .PresentacionH2{
+      font-size: 17px;
+      display: block;
+      
+     }
+    
+     .ImA{
+      
+      font-size: 20px;
+     }
+    
+     .typeIt{
+      font-size: 15px;
+      margin-bottom: -9px;
+      margin-left: 5px;
+      height: 29px;
+     }
+    
+     
+    
+     .imagen{
+      display: flex;
+     }
+}
+
+@media only screen 
+  and (min-device-width: 481px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .App-SobreMi{
+    margin-right: 0;
+    margin-top: 0;
+    gap:2em;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    }
+
+    .miImagen{
+      height: 15vh;
+    }
+
+    .SobreMi{
+      padding-top: 0;
+    }
+
+    .PresentacionH2{
+      display: block;
+      font-size: 20px;
+    }
+
+    .PresentacionH1{
+      font-size: 30px;
+      margin-bottom: -20px;
+      margin-top: -20px;
+    }
+  }
+
+
+  @media only screen
+  and (min-device-width:813px)
+  and (max-device-width:855px){
+    .miImagen{
+      height: 30vh;
+      width: 40vw;
+    }
+
+    .App-SobreMi{
+      margin-right: 0;
+      gap: 1em;
+      margin-top: 0;
+      height: 100vh;
+    }
+
+    .SobreMi{
+      padding-top: 0;
+    }
+    
+  }
+
+  @media only screen 
+  and (min-device-width: 856px) 
+  and (max-device-width: 1199px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .App-SobreMi{
+    margin-right: 0;
+    gap:1.5em;
+    margin-top: 0;
+    height: 105vh;
+  }
+
+  .miImagen{
+    height: 20vh;
+  }
+
+  .SobreMi{
+    padding-top: 0;
+  }
+  }
+
+  
+  @media only screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .miImagen{height: 30vh;
+    }
+
+    .App-SobreMi{
+      gap: 2em;
+    }
+
+    .SobreMi{
+      padding-top: 0;
+    }
+   
+  }

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Roboto:wght@300;400;700&family=Signika&display=swap');
+
+
+.form{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 350px;
+    padding: 3em 3em;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom:  .5em;
+}
+
+.form_paragraph{
+    font-weight: 300;
+}
+
+.form_link{
+    font-weight: 400;
+    color: black;
+
+}
+
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+
+}
+
+.form_group{
+    position: relative;
+    color: gray;
+}
+
+.form_input{
+    width: 100%;
+    background:none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+.form_input:not(:placeholder-shown) {
+    color: #4d4646;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left-top;
+    color: black;
+}
+
+
+
+
+.form_label{
+    color: gray;
+    cursor:pointer;
+    position: absolute;
+    top:-21px;
+    left:4px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+   
+}
+
+.form_submit{
+    background-color: orange;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    padding: .8em 10em;
+    border: none;
+    border-radius: 1.2em;
+    margin-top: 2em;
+    font-weight: 300;
+}
+
+.form_submit:hover{
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
+.form_line{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: scale(0);
+    transform: left bottom; 
+    transition: .4s;
+}
+
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_label{
+transform: scale(1);
+}
+
+@media(width:425px){
+    .form_title{
+        font-size: 1.8rem;
+    }
+}
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .form{
+        padding: 1em 1.2em;
+        margin-top: 4em;
+        text-align: center;
+        margin-bottom: 7em;
+        margin-left:25%;
+       
+    }
+
+    .form_container{
+        gap:3em;
+        font-size: 16px ;
+    }
+
+    .form_input{
+
+    background: none;
+    color: #706c6c;
+    font-size:20px;
+    padding:8px;
+    border: none;
+    outline: none;
+    border-bottom: .5px solid gray;
+    font-family: 'Roboto',sans-serif;
+    }
+
+
+    .form_label{
+        top:-35px;
+    }
+
+
+    .form_submit{
+        padding: .4em 3.5em;
+        font-size: 20px;
+    
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+}
+
+
+
+@media screen and(min-device-width:480px)
+and (max-device-width:812px)
+and (-webkit-min-device-pixel-ratio:3) {
+    
+        .form{
+        width: 65%;
+        padding: 1em 1em;
+        margin-top: 5em;
+        text-align: center;
+       margin-bottom: 7em;
+       text-align: center;
+        margin-left: 135px;
+    }
+
+    .form_container{
+        gap:4em;
+        font-size: 15px ;
+    }
+
+    .form_submit{
+        padding: 1em 5em;
+        font-size: 15px;
+        padding-top: 1em;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+    
+}
